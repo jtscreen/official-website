@@ -1,0 +1,208 @@
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* background */
+body {
+    background: black;
+    width: 100%;
+    height: 210vh;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/*Navigation*/
+.nav { 
+    grid-area: 1 / 1 / 2 / 2; 
+    height: 10vh; 
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    right: 1px;
+
+    background: linear-gradient(to top, #000000 0%, #4c4c4c 100%);
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 30px;
+    color:#ffffff;
+    text-align: end;
+    padding-top: 1em;
+    padding-bottom: 10px;
+
+    z-index: 100;
+}
+.navName{
+    position: absolute;
+    font-size: 40px;
+    left: 0;
+    top: -3vh;
+}
+a {
+    color: #ffffff;
+    padding: 1em 1em 1em 1em;
+    text-decoration: none;
+    transition: all;
+}
+a:hover {
+    transition: 1000ms;
+    color: #a3a3a3;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Dropdown Portfolio*/
+.port{
+    transition: all;
+}
+.drop {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    z-index: 1;
+}
+.dropdown a {
+    color: white;
+    background-color: rgb(0,0,0);
+    padding: 1vh 1vw;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    transition: all;
+}
+.dropdown a:hover{
+    background-color: rgba(105, 45, 45);
+    transition: 500ms;
+}
+
+.section{
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*images*/
+img {
+    max-width: 30%;
+    height: auto;
+    margin: 1vh 1vw ;
+}
+img:hover{
+    cursor: pointer;
+}
+
+.overlay {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    justify-content: center; 
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.arrow{
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    top: 8vh;
+    height: 92vh;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    width: 50vw;
+}
+
+#prev{
+    left: 30vw;
+    padding-right: 50vw;
+}
+#next{
+    right: 30vw;
+    padding-left: 50vw;
+}
+
+/*image containers (only used in galleries with both vertical and horizontal images)*/
+.image-container{
+    max-width: 30%;
+    height: auto;
+    margin: 1vh 1vw ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#production1Gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+#gradGallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+#eventGallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+#portraitGallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+#production1Gallery.vis{display: none;}
+#gradGallery.vis{display: none;}
+#eventGallery.vis{display: none;}
