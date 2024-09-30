@@ -99,6 +99,7 @@ a:hover {
 /*Form*/
 iframe{
     width: 100%;
+    overflow-y: clip;
 }
 
 /*Contact Image*/
