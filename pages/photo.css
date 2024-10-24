@@ -26,6 +26,18 @@ body {
     height: 100vh;
 }
 
+/*Hamburger menu*/
+#hamburger{
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    right: 0;
+    padding-right: 30px;
+}
+#hamburger-links{
+    display: none;
+}
+
 /*Navigation*/
 .nav { 
     grid-area: 1 / 1 / 2 / 2; 
@@ -97,14 +109,6 @@ a:hover {
     transition: 500ms;
 }
 
-.section{
-    scroll-snap-align: start;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 h2{
     font-size: 30px;
 }
@@ -166,10 +170,6 @@ h2{
     display: flex;
     flex-direction: row;
     margin-top: -5vh;
-
-    animation: fade-out linear;
-    animation-timeline: view();
-    animation-range-start: 95vh;
 }
 
 /*Production Photos*/
@@ -181,11 +181,6 @@ h2{
     display: flex;
     flex-direction: row;
     padding-top: 10vh;
-
-    scale: .8; opacity: 0;
-    animation: fade linear forwards;
-    animation-timeline: view();
-    animation-range-start: cover;
 }
 
 /*Graduation*/
@@ -197,11 +192,6 @@ h2{
     display: flex;
     flex-direction: row;
     padding-top: 10vh;
-
-    scale: .8; opacity: 0;
-    animation: fade linear forwards;
-    animation-timeline: view();
-    animation-range-start: cover;
 }
 
 /*Event Photos*/
@@ -213,11 +203,6 @@ h2{
     display: flex;
     flex-direction: row;
     padding-top: 10vh;
-
-    scale: .8; opacity: 0;
-    animation: fade linear forwards;
-    animation-timeline: view();
-    animation-range-start: cover;
 }
 
 /*Portraits*/
@@ -229,12 +214,6 @@ h2{
     display: flex;
     flex-direction: row;
     padding-top: 10vh;
-
-    scale: .8; opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 75vh;
 }
 
 /*Footer*/
@@ -252,16 +231,87 @@ h2{
     text-align: center;
 }
 
-/*Animation*/
-@keyframes fade-in{
-    to { scale: 1; opacity: 1;}
+/* Tablet View */
+@media screen and (max-width: 1140px) {
+    /*title*/
+    .navName{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*hamburger*/
+    #hamburger{
+        height: auto;       
+        width: auto; 
+        cursor: pointer;
+        display: block; 
+    }
+    .burger-symbol{
+        font-size: 5vh;
+    }
+    #nav-links{
+        display: none;
+        font-size: 30px;
+    }
+    #hamburger-links a{
+        margin: 0;
+        padding: 0 30px 0 50px;
+    }
+    #hamburger-links{
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        height: 100vh;
+        width: 30vw;
+        top: 10vh;
+        right: 0;
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /*Layout*/
+    body{
+        position: absolute;
+    }
+    .nav .headshot .bio .footer{
+        position: relative;
+    }
 }
-@keyframes fade {
-    0%{ scale:.8; opacity: 0}
-    45%{scale: 1; opacity: 1;}
-    55%{scale: 1; opacity: 1;}
-    100%{scale:.8; opacity:0}
-}
-@keyframes fade-out{
-    to { scale:.8; opacity: 0;}
+
+@media screen and (max-width: 910px) {
+    body{
+        height: auto;
+    }
+    #hamburger-links{
+        top: 12vh;
+        width: 100vw;
+        background-color: rgb(0,0,0);
+    }
+    #hamburger-links a{
+        width: 100vw;
+        padding: 0 5vw 0 45%;
+
+    }
+
+    .text{
+        margin-top: 2vh;
+    }
+    .text p{
+        font-size: medium;
+    }
+    .text .secondp{
+        font-size: small;
+    }
+
+     /*Layout*/
+     body{
+        position: absolute;
+    }
+    .nav .headshot .bio .footer{
+        position: relative;
+    }
 }

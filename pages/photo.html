@@ -20,21 +20,34 @@
     <div class="parent">
         <!--Navigation-->
         <div class="nav"> 
-            <header>
-                <nav>
-                    <a href="../home/home.html" class="navName">Joshua Screen</a>
-                    <a href="../home/home.html">Home</a> |
-                        <div class="drop">
-                            <a id="port" onclick="drop()">Portfolio</a> |
-                                <div class="dropdown">
-                                    <a href="../pages/acting.html">Acting</a>
-                                    <a href="../pages/photo.html">Photography</a>
-                                    <a href="../pages/music.html">Music</a>
-                                </div>
-                        </div>                    
-                    <a href="../contact/contact.html">Contact</a>
-                </nav>
-            </header>
+            <div>
+                <header>
+                    <nav>
+                        <a href="../home/home.html" class="navName">Joshua Screen</a>
+                        <div class="hamburger" id="hamburger"> 
+                            <span class="burger-symbol">≡</span> 
+                            <div id="hamburger-links">
+                                <a href="../home/home.html">Home</a>
+                                <a href="../pages/acting.html">Acting</a>
+                                <a href="../pages/photo.html">Photography</a>
+                                <a href="../contact/contact.html">Contact</a>
+                            </div>
+                        </div>
+                        <div id="nav-links" class="nav-links">
+                            <a href="../home/home.html">Home</a> |
+                            <div class="drop">
+                                <a id="port">Portfolio</a> |
+                                    <div class="dropdown">
+                                        <a href="../pages/acting.html">Acting</a>
+                                        <a href="../pages/photo.html">Photography</a>
+                                        <!--<a href="../pages/music.html">Music</a>-->
+                                    </div>
+                            </div>
+                            <a href="../contact/contact.html">Contact</a>
+                        </div>
+                    </nav>
+                </header>
+            </div>
         </div>
         <div class="headshot">
             <div class="container">
@@ -51,73 +64,65 @@
                 <p><strong><a href="../contact/contact.html">Book Now!</a><a href="../pages/Galleries/hGallery.html">See Full Gallery</a></strong></p>
             </div>
         </div>
-        <section id="productionSection">
-            <div class="production">
-                <div class="container">
-                    <img id="production" src="../workImg/production/godspell/godspell1.JPG">
-                    <h1 class="arrow" onclick="prev2()">&lt;</h1>
-                    <h1 class="arrow" onclick="next2()">&gt;</h1>
-                </div>
-                <div class="slider">
-                    <h2>Production Photos</h2>
-                    <p>Starting at $300</p>
-                    <p>As a person involved in theater and film myself, I know the importance of capturing the hard work that everyone puts into the work at hand.</p> 
-                    <p>From bts to stage productions, I will capture stills of the process and final product. You can expect touched up photos within the week of photo selection.</p>
-                    <h3 id="title">Godspell | Fordham University Splinter</h3>
-                    <p><strong><a href="../contact/contact.html">Book Now!</a><a href="../pages/Galleries/btsGallery.html">See Full Gallery</a></strong></p>
-                </div>
+        <div class="production">
+            <div class="container">
+                <img id="production" src="../workImg/production/godspell/godspell1.JPG">
+                <h1 class="arrow" onclick="prev2()">&lt;</h1>
+                <h1 class="arrow" onclick="next2()">&gt;</h1>
             </div>
-        </section>
-       <section id="gradSection">
-            <div class="grad">
-                <div class="container">
-                    <img id="grad" src="../workImg/grad/Ara5.JPG">
-                    <h1 class="arrow" onclick="prev4()">&lt;</h1>
-                    <h1 class="arrow" onclick="next4()">&gt;</h1>
-                </div>
-                <div class="slider">
-                    <h2>Graduation Photos</h2>
-                    <p>Starting at $100</p>
-                    <p>Congratulations!</p> 
-                    <p>You've completed a milestone in you life and I would like to help you capture that moment.</p>
-                    <p>Our sessions can take place in or outside, up to 2 locations included with the starting price.</p>
-                    <p><strong><a href="../contact/contact.html">Book Now!</a><a href="../pages/Galleries/gradGallery.html">See Full Gallery</a></strong></p>
-                </div>
+            <div class="slider">
+                <h2>Production Photos</h2>
+                <p>Starting at $300</p>
+                <p>As a person involved in theater and film myself, I know the importance of capturing the hard work that everyone puts into the work at hand.</p> 
+                <p>From bts to stage productions, I will capture stills of the process and final product. You can expect touched up photos within the week of photo selection.</p>
+                <h3 id="title">Godspell | Fordham University Splinter</h3>
+                <p><strong><a href="../contact/contact.html">Book Now!</a><a href="../pages/Galleries/btsGallery.html">See Full Gallery</a></strong></p>
             </div>
-       </section>
-       <section id="eventSection">
-            <div class="event">
-                <div class="container">
-                    <img id="event" src="../workImg/event/shaddi/shaddi1.jpg">
-                    <h1 class="arrow" onclick="prev3()">&lt;</h1>
-                    <h1 class="arrow" onclick="next3()">&gt;</h1>
-                </div>
-                <div class="slider">
-                    <h2>Event Photography</h2>
-                    <p>Starting at $500</p>
-                    <p>Capturing your important moments is important to me too.</p> 
-                    <p>Whether it be a school event or a gala, I will capture it all. I will be there from beginning to end to capture every moment</p>
-                    <p><strong><a href="../contact/contact.html">Book Now!</a><a href="../pages/Galleries/eventGallery.html">See Full Gallery</a></strong></p>
-                </div>
+        </div>
+        <div class="grad">
+            <div class="container">
+                <img id="grad" src="../workImg/grad/Ara5.JPG">
+                <h1 class="arrow" onclick="prev4()">&lt;</h1>
+                <h1 class="arrow" onclick="next4()">&gt;</h1>
             </div>
-       </section>
-       <section id="portraitSection">
-            <div class="portrait">
-                <div class="container">
-                    <img id="portrait" src="../workImg/portrait/julie4.jpg">
-                    <h1 class="arrow" onclick="prev1()">&lt;</h1>
-                    <h1 class="arrow" onclick="next1()">&gt;</h1>
-                </div>
-                <div class="slider">
-                    <h2>Portraits</h2>
-                    <p>Starting at $150</p>
-                    <p>Do you have something you would like to advertize, show off, or just get a really good picture?</p>
-                    <p>Do you want to capture a moment with a special someone?</p>
-                    <p>We can book a block of time together in a studio to get the pictures you like.</p>
-                    <p><strong><a href="../contact/contact.html">Book Now!</a><a href="../pages/Galleries/pGallery.html">See Full Gallery</a></strong></p>
-                </div>
+            <div class="slider">
+                <h2>Graduation Photos</h2>
+                <p>Starting at $100</p>
+                <p>Congratulations!</p> 
+                <p>You've completed a milestone in you life and I would like to help you capture that moment.</p>
+                <p>Our sessions can take place in or outside, up to 2 locations included with the starting price.</p>
+                <p><strong><a href="../contact/contact.html">Book Now!</a><a href="../pages/Galleries/gradGallery.html">See Full Gallery</a></strong></p>
             </div>
-       </section>
+        </div>
+        <div class="event">
+            <div class="container">
+                <img id="event" src="../workImg/event/shaddi/shaddi1.jpg">
+                <h1 class="arrow" onclick="prev3()">&lt;</h1>
+                <h1 class="arrow" onclick="next3()">&gt;</h1>
+            </div>
+            <div class="slider">
+                <h2>Event Photography</h2>
+                <p>Starting at $500</p>
+                <p>Capturing your important moments is important to me too.</p> 
+                <p>Whether it be a school event or a gala, I will capture it all. I will be there from beginning to end to capture every moment</p>
+                <p><strong><a href="../contact/contact.html">Book Now!</a><a href="../pages/Galleries/eventGallery.html">See Full Gallery</a></strong></p>
+            </div>
+        </div>
+        <div class="portrait">
+            <div class="container">
+                <img id="portrait" src="../workImg/portrait/julie4.jpg">
+                <h1 class="arrow" onclick="prev1()">&lt;</h1>
+                <h1 class="arrow" onclick="next1()">&gt;</h1>
+            </div>
+            <div class="slider">
+                <h2>Portraits</h2>
+                <p>Starting at $150</p>
+                <p>Do you have something you would like to advertize, show off, or just get a really good picture?</p>
+                <p>Do you want to capture a moment with a special someone?</p>
+                <p>We can book a block of time together in a studio to get the pictures you like.</p>
+                <p><strong><a href="../contact/contact.html">Book Now!</a><a href="../pages/Galleries/pGallery.html">See Full Gallery</a></strong></p>
+            </div>
+        </div>
 
         <!--Footer-->
         <footer class="footer">
